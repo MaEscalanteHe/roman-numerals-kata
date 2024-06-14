@@ -12,4 +12,8 @@ describe("Roman Numerals", () => {
   it("should be second roman number", () => {
     expect(romanNumerals.fromArabic(2)).toBe("II")
   })
+
+  it("should be third roman number", () => {
+    expect(romanNumerals.fromArabic(3)).toBe("III")
+  })
 })
