@@ -20,4 +20,8 @@ describe("Roman Numerals", () => {
   it("should be fourth roman number", () => {
     expect(romanNumerals.fromArabic(4)).toBe("IV")
   })
+
+  it("should be fifth roman number", () => {
+    expect(romanNumerals.fromArabic(5)).toBe("V")
+  })
 })
