@@ -40,4 +40,12 @@ describe("Roman Numerals", () => {
   it("should be fifty roman number", () => {
     expect(romanNumerals.fromArabic(50)).toBe("L")
   })
+
+  it("should be twenty roman number", () => {
+    expect(romanNumerals.fromArabic(20)).toBe("XX")
+  })
+
+  it("should be forty roman number", () => {
+    expect(romanNumerals.fromArabic(40)).toBe("XL")
+  })
 })
