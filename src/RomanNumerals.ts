@@ -12,6 +12,10 @@ export class RomanNumerals {
       result = "IV"
     }
 
+    if (value === 5) {
+      result = "V"
+    }
+
     return result
   }
 }
