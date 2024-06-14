@@ -36,4 +36,8 @@ describe("Roman Numerals", () => {
   it("should be tenth roman number", () => {
     expect(romanNumerals.fromArabic(10)).toBe("X")
   })
+
+  it("should be fifty roman number", () => {
+    expect(romanNumerals.fromArabic(50)).toBe("L")
+  })
 })
