@@ -29,6 +29,10 @@ describe("Roman Numerals", () => {
     expect(romanNumerals.fromArabic(6)).toBe("VI")
   })
 
+  it("should be ninth roman number", () => {
+    expect(romanNumerals.fromArabic(9)).toBe("IX")
+  })
+
   it("should be tenth roman number", () => {
     expect(romanNumerals.fromArabic(10)).toBe("X")
   })
