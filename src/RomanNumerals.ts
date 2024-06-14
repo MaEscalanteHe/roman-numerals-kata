@@ -16,6 +16,10 @@ export class RomanNumerals {
       result = "V"
     }
 
+    if (value === 6) {
+      result = "VI"
+    }
+
     return result
   }
 }
