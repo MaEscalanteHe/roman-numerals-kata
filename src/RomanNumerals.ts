@@ -3,6 +3,7 @@ export class RomanNumerals {
     let result: string = ""
 
     if (value === 4) return "IV"
+    if (value === 10) return "X"
 
     if (value >= 5) {
       result = "V"
