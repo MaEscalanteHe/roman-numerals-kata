@@ -1,19 +1,20 @@
-const ArabicToRomanNumbers: { [key: number]: string } = {
-  10: "X",
-  9: "IX",
-  5: "V",
-  4: "IV",
-  1: "I",
+const ArabicToRomanNumbers: { [key: string]: number } = {
+  X: 10,
+  IX: 9,
+  V: 5,
+  IV: 4,
+  I: 1,
 }
 export class RomanNumerals {
   fromArabic(value: number): string {
     let result: string = ""
 
-    for (const arabicNumber of Object.keys(ArabicToRomanNumbers)
-      .map(Number)
-      .sort((a, b) => b - a)) {
+    const keys = Object.keys(ArabicToRomanNumbers)
+    for (const romanSymbol of keys) {
+      const arabicNumber = ArabicToRomanNumbers[romanSymbol]
+
       while (value >= arabicNumber) {
-        result += ArabicToRomanNumbers[arabicNumber]
+        result += romanSymbol
         value -= arabicNumber
       }
     }
