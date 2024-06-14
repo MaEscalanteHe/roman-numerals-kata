@@ -48,4 +48,16 @@ describe("Roman Numerals", () => {
   it("should be forty roman number", () => {
     expect(romanNumerals.fromArabic(40)).toBe("XL")
   })
+
+  it("should be nineteen roman number", () => {
+    expect(romanNumerals.fromArabic(19)).toBe("XIX")
+  })
+
+  it("should be ninety roman number", () => {
+    expect(romanNumerals.fromArabic(90)).toBe("XC")
+  })
+
+  it("should be one hundred roman number", () => {
+    expect(romanNumerals.fromArabic(100)).toBe("C")
+  })
 })
