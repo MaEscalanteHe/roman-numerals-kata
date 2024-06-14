@@ -8,4 +8,8 @@ describe("Roman Numerals", () => {
   it("should be first roman number", () => {
     expect(romanNumerals.fromArabic(1)).toBe("I")
   })
+
+  it("should be second roman number", () => {
+    expect(romanNumerals.fromArabic(2)).toBe("II")
+  })
 })
